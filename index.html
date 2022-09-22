@@ -5,10 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Working on Responsive images ">
 
-  <!-- copy your <head> info including title, favicon info, and site description meta tag here -->
-
-  <title>Document</title>
+  <!--Favicons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+  <link rel="manifest" href="./images/site.webmanifest">
+  <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./images/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>Semantic Assignment</title>
 
   <!-- but keep this line -->
   <link rel="stylesheet" href="styles/main.css">
@@ -16,13 +25,17 @@
 
 <body>
   <picture>
-    <source media="(min-width: 769px)" srcset="images/hero-squirrel-1920w.jpg">
-    <source media="(min-width: 381px)" srcset="images/hero-squirrel-768w.jpg">
-    <source media="(max-width: 380px)" srcset="images/hero-squirrel-380w.jpg">
-    <img src="images/hero-squirrel-768w.jpg" alt="brown squirrel on green grass lawn">
+    <source media="(min-width: 769px)" srcset="images/hero-mysterious-house-1920w.jpg">
+    <source media="(min-width: 381px)" srcset="images/hero-mysterious-house-768w.jpg">
+    <source media="(max-width: 380px)" srcset="images/hero-mysterious-house-380w.jpg">
+    <img src="images/hero-mysterious-house-768w.jpg"
+      alt="man with bag approaches an old home with the lights on at night">
   </picture>
   <header>
     <nav>
+      <svg>
+        <use href="#hamburgermenu" />
+      </svg>
       <ul>
         <li><a>Home</a></li>
         <li><a href="about/">About</a></li>
@@ -33,8 +46,49 @@
 
   <!-- copy your main, aside, and footer from your previous assignment here -->
   <main>
-    <h1>Squirrels are your friends</h1>
+    <h1>Visit [Untitled Province 24]</h1>
+    <article>
+      <h2>Wonderful Scenery</h2>
+      <p>The lands around our city which has yet to be named are beautiful! Enjoy mountainous vistas, silent looming
+        pines, long evening shadows, and become overwhelmed by the growing feeling of isolation, dread, and the need to
+        escape. Escape into your wonderful vacation we mean.</p>
+      <figure>
+        <img src="images/mountain-pines-sunset.jpg" alt="sunset over a pine forest in the mountains" width="900"
+          height="600">
+        <figcaption>A view from the town</figcaption>
+      </figure>
+    </article>
+    <article>
+      <h2>No Disappearances</h2>
+      <p>Some naysayers claim that unsuspecting tourists have gone mysteriously missing while visiting The Untitled
+        Province (which may sound like a title, but we reassure you that it is <em>NOT</em> and all who say so will go
+        mysteriously missing just as all who have dared such treachery before). We promise you that no one has ever
+        gotten lost, kidnapped, sold to passing alien gypsies, or sacrificed to the all knowing Void being</p>
+    </article>
   </main>
+
+  <aside>
+    <p><strong>We promise you that no one has ever
+        gotten lost, kidnapped, sold to passing alien gypsies, or sacrificed to the all knowing Void being</strong></p>
+  </aside>
+
+  <footer>
+    <p>This is the bottom of the page</p>
+  </footer>
+
+  <!--Symbol-->
+  <svg>
+    <symbol id="hamburgermenu" viewBox="0 0 120 120" stroke-width="10" stroke="#8E9D88" stroke-linecap="round">
+      <line x1="10" y1="10" x2="110" y2="10" />
+      <line x1="10" y1="30" x2="90" y2="30" />
+      <line x1="10" y1="50" x2="70" y2="50" />
+      <line x1="10" y1="70" x2="50" y2="70" />
+      <line x1="10" y1="90" x2="30" y2="90" />
+      <line x1="10" y1="110" x2="15" y2="110" />
+    </symbol>
+  </svg>
 </body>
+
+
 
 </html>
